@@ -1,0 +1,62 @@
+inherited FrmRegistro_LgXhdpiPh: TFrmRegistro_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+  end
+  inherited Panel1: TPanel
+    Size.Width = 450.000000000000000000
+    inherited SpeedButton3: TSpeedButton
+      Position.X = 402.000000000000000000
+    end
+  end
+  inherited EdtNome: TEdit
+    Align = Top
+    Position.X = 15.000000000000000000
+    Position.Y = 195.000000000000000000
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Size.Width = 420.000000000000000000
+    Size.PlatformDefault = False
+  end
+  inherited EdtEmail: TEdit
+    Align = Top
+    Position.X = 15.000000000000000000
+    Position.Y = 237.000000000000000000
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Size.Width = 420.000000000000000000
+    Size.PlatformDefault = False
+  end
+  inherited EdtSenha: TEdit
+    Align = Top
+    Password = True
+    Position.X = 15.000000000000000000
+    Position.Y = 279.000000000000000000
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Size.Width = 420.000000000000000000
+    Size.PlatformDefault = False
+  end
+  inherited BtnSalvar: TButton
+    Align = Top
+    Margins.Left = 50.000000000000000000
+    Margins.Top = 25.000000000000000000
+    Margins.Right = 50.000000000000000000
+    Position.X = 50.000000000000000000
+    Position.Y = 336.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.PlatformDefault = False
+  end
+  inherited ListBox1: TListBox
+    Position.Y = 456.000000000000000000
+    Size.Width = 450.000000000000000000
+    Size.Height = 239.000000000000000000
+    Viewport.Width = 450.000000000000000000
+    Viewport.Height = 239.000000000000000000
+  end
+end

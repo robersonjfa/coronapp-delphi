@@ -1,0 +1,68 @@
+inherited FrmPrincipal_LgXhdpiPh: TFrmPrincipal_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited Panel2: TPanel
+    Margins.Left = 201.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited ToolBar1: TToolBar
+      Size.Width = 249.000000000000000000
+    end
+    inherited TabControl1: TTabControl
+      Size.Width = 249.000000000000000000
+      Size.Height = 647.000000000000000000
+      Sizes = (
+        249s
+        598s
+        249s
+        598s
+        249s
+        598s)
+      inherited TabItem1: TTabItem
+        Size.Width = 83.000000000000000000
+        ExplicitSize.cx = 249.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited LsvNoticia: TListView
+          Size.Width = 249.000000000000000000
+          Size.Height = 598.000000000000000000
+        end
+      end
+      inherited TabItem2: TTabItem
+        Size.Width = 83.000000000000000000
+        ExplicitSize.cx = 125.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited LsbSintomas: TListBox
+          Size.Width = 249.000000000000000000
+          Size.Height = 598.000000000000000000
+          Viewport.Width = 249.000000000000000000
+          Viewport.Height = 598.000000000000000000
+          inherited ListBoxHeader1: TListBoxHeader
+            Size.Width = 249.000000000000000000
+          end
+        end
+      end
+      inherited TabItem3: TTabItem
+        Size.Width = 83.000000000000000000
+        ExplicitSize.cx = 83.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited Label3: TLabel
+          Size.Width = 249.000000000000000000
+          Size.Height = 598.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+  end
+  inherited MultiView1: TMultiView
+    Size.Height = 695.000000000000000000
+    inherited ListBox1: TListBox
+      Size.Height = 566.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 566.000000000000000000
+      inherited ListBoxItem2: TListBoxItem
+        Text = 'Registrar'
+      end
+    end
+  end
+end

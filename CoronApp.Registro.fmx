@@ -1,0 +1,153 @@
+object FrmRegistro: TFrmRegistro
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object SpeedButton1: TSpeedButton
+      Action = WindowClose1
+      Align = Left
+      Enabled = True
+      ImageIndex = -1
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowlefttoolbutton'
+    end
+    object Label1: TLabel
+      Position.X = 48.000000000000000000
+      Position.Y = 11.000000000000000000
+      Text = 'Registro'
+      TabOrder = 1
+    end
+  end
+  object Panel1: TPanel
+    Align = Top
+    Position.Y = 48.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 137.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object SpeedButton2: TSpeedButton
+      Align = Left
+      Position.Y = 44.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cameratoolbutton'
+      Text = 'SpeedButton2'
+      OnClick = SpeedButton2Click
+    end
+    object SpeedButton3: TSpeedButton
+      Align = Right
+      Position.X = 592.000000000000000000
+      Position.Y = 44.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'organizetoolbutton'
+      Text = 'SpeedButton3'
+      OnClick = SpeedButton3Click
+    end
+    object ImgFoto: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Align = Center
+      Size.Width = 177.000000000000000000
+      Size.Height = 133.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object EdtNome: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 160.000000000000000000
+    Position.Y = 224.000000000000000000
+    TextPrompt = 'Nome'
+  end
+  object EdtEmail: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 240.000000000000000000
+    Position.Y = 272.000000000000000000
+    TextPrompt = 'E-mail'
+  end
+  object EdtSenha: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 168.000000000000000000
+    Position.Y = 296.000000000000000000
+    TextPrompt = 'Senha'
+  end
+  object BtnSalvar: TButton
+    Position.X = 88.000000000000000000
+    Position.Y = 312.000000000000000000
+    TabOrder = 5
+    Text = 'Salvar'
+    OnClick = BtnSalvarClick
+  end
+  object ListBox1: TListBox
+    Align = Bottom
+    Position.Y = 352.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 128.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    DisableFocusEffect = True
+    ItemIndex = 0
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 640.000000000000000000
+    Viewport.Height = 128.000000000000000000
+  end
+  object ActionList1: TActionList
+    Left = 480
+    Top = 136
+    object WindowClose1: TWindowClose
+      Category = 'Window'
+      Hint = 'Close Window|Close active form'
+    end
+    object TakeFotoFromCameraAction: TTakePhotoFromCameraAction
+      Category = 'Media Library'
+      OnDidFinishTaking = TakeFotoFromCameraActionDidFinishTaking
+    end
+    object TakeFotoFromLibraryAction: TTakePhotoFromLibraryAction
+      Category = 'Media Library'
+      OnDidFinishTaking = TakeFotoFromLibraryActionDidFinishTaking
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DtmDados.FDRegistroQuery
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'email'
+      Control = ListBox1
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'nome'
+      FillBreakGroups = <>
+    end
+  end
+end

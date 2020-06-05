@@ -1,0 +1,15 @@
+﻿[FDPhysSQLiteDriverLink1]
+Coordinates=234,1,142,33
+
+[FDRegistroInsert]
+Coordinates=119,10,97,51
+
+[FDConexao]
+Coordinates=118,71,71,33
+
+[FDRegistroQuery]
+Coordinates=10,10,99,141
+
+[FDGUIxWaitCursor1]
+Coordinates=118,123,113,33
+

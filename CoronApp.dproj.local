@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/05/23 15:56:17.000.530,=C:\Users\rober\Google Drive\dsv\wksdelphi\Unit1.pas</Transaction>
+    <Transaction>2020/05/23 15:59:12.000.362,C:\Users\rober\Google Drive\dsv\wksdelphi\Unit1.pas=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Principal.pas</Transaction>
+    <Transaction>2020/05/23 15:59:12.000.362,C:\Users\rober\Google Drive\dsv\wksdelphi\Unit1.fmx=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Principal.fmx</Transaction>
+    <Transaction>2020/05/23 15:59:22.000.135,C:\Users\rober\Google Drive\dsv\wksdelphi\Project1.dproj=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.dproj</Transaction>
+    <Transaction>2020/06/04 20:10:18.305,=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit2.pas</Transaction>
+    <Transaction>2020/06/04 20:10:44.720,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Registro.fmx=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit2.fmx</Transaction>
+    <Transaction>2020/06/04 20:10:44.720,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Registro.pas=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit2.pas</Transaction>
+    <Transaction>2020/06/04 21:11:57.053,=C:\ferramentas\coronapp.db</Transaction>
+    <Transaction>2020/06/04 21:14:32.082,=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit1.pas</Transaction>
+    <Transaction>2020/06/04 21:15:40.925,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Dados.pas=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit1.pas</Transaction>
+    <Transaction>2020/06/04 21:15:40.925,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Dados.dfm=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit1.dfm</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android64="" Android="0045442702"/>
+	</ActiveMobileDevice>
+</BorlandProject>

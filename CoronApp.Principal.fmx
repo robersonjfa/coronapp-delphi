@@ -1,0 +1,193 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Panel2: TPanel
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ToolBar1: TToolBar
+      Size.Width = 640.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object SpeedButton1: TSpeedButton
+        Align = Left
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'detailstoolbutton'
+      end
+      object Label1: TLabel
+        Align = Left
+        Position.X = 48.000000000000000000
+        Size.Width = 82.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'CoronApp'
+        TabOrder = 1
+      end
+    end
+    object TabControl1: TTabControl
+      Align = Client
+      Size.Width = 640.000000000000000000
+      Size.Height = 432.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 1
+      TabPosition = Bottom
+      Sizes = (
+        640s
+        383s
+        640s
+        383s
+        640s
+        383s)
+      object TabItem1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 213.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Not'#237'cias'
+        object LsvNoticia: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 640.000000000000000000
+          Size.Height = 383.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object TabItem2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 213.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TESTE R'#193'PIDO'
+        object LsbSintomas: TListBox
+          Align = Client
+          Size.Width = 640.000000000000000000
+          Size.Height = 383.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 640.000000000000000000
+          Viewport.Height = 335.000000000000000000
+          object ListBoxHeader1: TListBoxHeader
+            Size.Width = 640.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Label2: TLabel
+              Align = Left
+              Size.Width = 97.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Sintomas:'
+              TabOrder = 0
+            end
+          end
+        end
+      end
+      object TabItem3: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 214.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'SOBRE'
+        object Label3: TLabel
+          Align = Client
+          StyledSettings = [Family, FontColor]
+          Size.Width = 640.000000000000000000
+          Size.Height = 383.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 30.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Sobre o Sistema'
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object MultiView1: TMultiView
+    TargetControl = Panel2
+    MasterButton = SpeedButton1
+    Mode = Drawer
+    NavigationPaneOptions.CollapsedWidth = 201.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 0
+    object Panel1: TPanel
+      Align = Top
+      Size.Width = 250.000000000000000000
+      Size.Height = 129.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object ListBox1: TListBox
+      Align = Client
+      Size.Width = 250.000000000000000000
+      Size.Height = 351.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 351.000000000000000000
+      object ListBoxItem1: TListBoxItem
+        ItemData.Accessory = aMore
+        TabOrder = 0
+        Text = 'Configura'#231#227'o'
+      end
+      object ListBoxGroupHeader1: TListBoxGroupHeader
+        Position.Y = 44.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Op'#231#245'es'
+      end
+      object ListBoxItem2: TListBoxItem
+        Position.Y = 74.000000000000000000
+        TabOrder = 2
+        Text = 'Registro'
+        OnClick = ListBoxItem2Click
+      end
+    end
+  end
+end
