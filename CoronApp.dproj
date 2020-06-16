@@ -212,6 +212,10 @@
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
+        <DCCReference Include="CoronApp.Login.pas">
+            <Form>FrmLogin</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <None Include="C:\ferramentas\coronapp.db"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

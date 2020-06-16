@@ -17,6 +17,7 @@ type
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink;
     FDRegistroQuery: TFDQuery;
+    FDLoginQuery: TFDQuery;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

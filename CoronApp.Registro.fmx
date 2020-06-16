@@ -8,6 +8,7 @@ object FrmRegistro: TFrmRegistro
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   OnActivate = FormActivate
+  OnCreate = FormCreate
   DesignerMasterStyle = 3
   object ToolBar1: TToolBar
     Size.Width = 640.000000000000000000

@@ -16,7 +16,7 @@ object DtmDados: TDtmDados
       
         'insert into usuario(nome, email, senha) values(:nome, :email, :s' +
         'enha)')
-    Left = 128
+    Left = 144
     Top = 16
     ParamData = <
       item
@@ -46,7 +46,23 @@ object DtmDados: TDtmDados
     Connection = FDConexao
     SQL.Strings = (
       'select * from usuario')
-    Left = 216
+    Left = 248
     Top = 16
+  end
+  object FDLoginQuery: TFDQuery
+    Connection = FDConexao
+    SQL.Strings = (
+      'select nome from usuario where email = :email and senha = :senha')
+    Left = 48
+    Top = 160
+    ParamData = <
+      item
+        Name = 'EMAIL'
+        ParamType = ptInput
+      end
+      item
+        Name = 'SENHA'
+        ParamType = ptInput
+      end>
   end
 end

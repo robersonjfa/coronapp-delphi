@@ -1,0 +1,16 @@
+inherited FrmLogin_iPad: TFrmLogin_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 3
+  inherited Panel1: TPanel
+    inherited BtnLogin: TSpeedButton
+      Size.Height = 44.000000000000000000
+    end
+    inherited EdtEmail: TEdit
+      Size.Height = 30.000000000000000000
+    end
+    inherited EdtSenha: TEdit
+      Size.Height = 30.000000000000000000
+    end
+  end
+end

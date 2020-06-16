@@ -63,6 +63,8 @@ object FrmPrincipal: TFrmPrincipal
         StyleLookup = ''
         TabOrder = 0
         Text = 'Not'#237'cias'
+        ExplicitSize.cx = 213.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
         object LsvNoticia: TListView
           ItemAppearanceClassName = 'TListItemAppearance'
           ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
@@ -86,6 +88,8 @@ object FrmPrincipal: TFrmPrincipal
         StyleLookup = ''
         TabOrder = 0
         Text = 'TESTE R'#193'PIDO'
+        ExplicitSize.cx = 213.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
         object LsbSintomas: TListBox
           Align = Client
           Size.Width = 640.000000000000000000
@@ -125,6 +129,8 @@ object FrmPrincipal: TFrmPrincipal
         StyleLookup = ''
         TabOrder = 0
         Text = 'SOBRE'
+        ExplicitSize.cx = 214.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
         object Label3: TLabel
           Align = Client
           StyledSettings = [Family, FontColor]

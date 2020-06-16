@@ -39,6 +39,7 @@ type
     procedure TakeFotoFromCameraActionDidFinishTaking(Image: TBitmap);
     procedure TakeFotoFromLibraryActionDidFinishTaking(Image: TBitmap);
     procedure BtnSalvarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
 {$IFDEF ANDROID}
@@ -181,6 +182,11 @@ begin
   PermissaoWriteStorage := JStringToString
     (TJManifest_permission.JavaClass.WRITE_EXTERNAL_STORAGE);
 {$ENDIF}
+end;
+
+procedure TFrmRegistro.FormCreate(Sender: TObject);
+begin
+
 end;
 
 {$ENDIF}

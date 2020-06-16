@@ -1,0 +1,59 @@
+object FrmLogin: TFrmLogin
+  Left = 0
+  Top = 0
+  Caption = 'Login'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Panel1: TPanel
+    Align = Center
+    Margins.Left = 50.000000000000000000
+    Margins.Right = 50.000000000000000000
+    Size.Width = 324.000000000000000000
+    Size.Height = 156.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object BtnLogin: TSpeedButton
+      Position.X = 115.000000000000000000
+      Position.Y = 76.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Login'
+    end
+    object BtnRegistro: TSpeedButton
+      Align = Bottom
+      Position.Y = 126.000000000000000000
+      Size.Width = 324.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listitembutton'
+      Text = 'Registre-se'
+      OnClick = BtnRegistroClick
+    end
+    object EdtEmail: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 3.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 313.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'E-mail'
+    end
+    object EdtSenha: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Password = True
+      Position.X = 3.000000000000000000
+      Position.Y = 44.000000000000000000
+      Size.Width = 313.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Senha'
+    end
+  end
+end
