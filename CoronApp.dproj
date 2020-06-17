@@ -216,6 +216,10 @@
             <Form>FrmLogin</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="CoronApp.Detalhe.pas">
+            <Form>FrmDetalhe</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <None Include="C:\ferramentas\coronapp.db"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

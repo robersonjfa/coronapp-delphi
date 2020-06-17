@@ -1,28 +1,10 @@
 inherited FrmLogin_LgXhdpiPh: TFrmLogin_LgXhdpiPh
-  ActiveControl = EdtEmail
   ClientHeight = 695
   ClientWidth = 450
   DesignerMasterStyle = 3
   inherited Panel1: TPanel
-    Size.Width = 330.000000000000000000
-    Size.Height = 188.000000000000000000
     inherited BtnLogin: TSpeedButton
-      Position.X = 104.000000000000000000
-      Position.Y = 100.000000000000000000
-      Size.Width = 118.000000000000000000
       OnClick = BtnLoginClick
-    end
-    inherited BtnRegistro: TSpeedButton
-      Position.Y = 158.000000000000000000
-      Size.Width = 330.000000000000000000
-    end
-    inherited EdtEmail: TEdit
-      Position.Y = 10.000000000000000000
-      Size.Width = 318.000000000000000000
-    end
-    inherited EdtSenha: TEdit
-      Position.Y = 58.000000000000000000
-      Size.Width = 318.000000000000000000
     end
   end
 end

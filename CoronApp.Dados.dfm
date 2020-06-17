@@ -53,8 +53,8 @@ object DtmDados: TDtmDados
     Connection = FDConexao
     SQL.Strings = (
       'select nome from usuario where email = :email and senha = :senha')
-    Left = 48
-    Top = 160
+    Left = 344
+    Top = 24
     ParamData = <
       item
         Name = 'EMAIL'

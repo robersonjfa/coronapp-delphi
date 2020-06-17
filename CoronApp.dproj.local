@@ -2,19 +2,22 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2020/05/23 15:56:17.000.530,=C:\Users\rober\Google Drive\dsv\wksdelphi\Unit1.pas</Transaction>
-    <Transaction>2020/05/23 15:59:12.000.362,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Principal.fmx=C:\Users\rober\Google Drive\dsv\wksdelphi\Unit1.fmx</Transaction>
-    <Transaction>2020/05/23 15:59:12.000.362,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Principal.pas=C:\Users\rober\Google Drive\dsv\wksdelphi\Unit1.pas</Transaction>
-    <Transaction>2020/05/23 15:59:22.000.135,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.dproj=C:\Users\rober\Google Drive\dsv\wksdelphi\Project1.dproj</Transaction>
+    <Transaction>2020/05/23 15:59:12.000.362,C:\Users\rober\Google Drive\dsv\wksdelphi\Unit1.fmx=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Principal.fmx</Transaction>
+    <Transaction>2020/05/23 15:59:12.000.362,C:\Users\rober\Google Drive\dsv\wksdelphi\Unit1.pas=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Principal.pas</Transaction>
+    <Transaction>2020/05/23 15:59:22.000.135,C:\Users\rober\Google Drive\dsv\wksdelphi\Project1.dproj=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.dproj</Transaction>
     <Transaction>2020/06/04 20:10:18.000.305,=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit2.pas</Transaction>
-    <Transaction>2020/06/04 20:10:44.000.720,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit2.pas=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Registro.pas</Transaction>
-    <Transaction>2020/06/04 20:10:44.000.720,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit2.fmx=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Registro.fmx</Transaction>
+    <Transaction>2020/06/04 20:10:44.000.720,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Registro.pas=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit2.pas</Transaction>
+    <Transaction>2020/06/04 20:10:44.000.720,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Registro.fmx=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit2.fmx</Transaction>
     <Transaction>2020/06/04 21:11:57.000.053,=C:\ferramentas\coronapp.db</Transaction>
     <Transaction>2020/06/04 21:14:32.000.082,=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit1.pas</Transaction>
-    <Transaction>2020/06/04 21:15:40.000.925,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit1.dfm=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Dados.dfm</Transaction>
-    <Transaction>2020/06/04 21:15:40.000.925,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit1.pas=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Dados.pas</Transaction>
-    <Transaction>2020/06/16 10:12:00.818,=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp_v12062020\Unit1.pas</Transaction>
-    <Transaction>2020/06/16 10:12:12.474,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp_v12062020\CoronApp.Login.fmx=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp_v12062020\Unit1.fmx</Transaction>
-    <Transaction>2020/06/16 10:12:12.474,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp_v12062020\CoronApp.Login.pas=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp_v12062020\Unit1.pas</Transaction>
+    <Transaction>2020/06/04 21:15:40.000.925,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Dados.dfm=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit1.dfm</Transaction>
+    <Transaction>2020/06/04 21:15:40.000.925,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\CoronApp.Dados.pas=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp\Unit1.pas</Transaction>
+    <Transaction>2020/06/16 10:12:00.000.818,=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp_v12062020\Unit1.pas</Transaction>
+    <Transaction>2020/06/16 10:12:12.000.474,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp_v12062020\Unit1.pas=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp_v12062020\CoronApp.Login.pas</Transaction>
+    <Transaction>2020/06/16 10:12:12.000.474,C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp_v12062020\Unit1.fmx=C:\Users\rober\Google Drive\dsv\wksdelphi\CoronApp_v12062020\CoronApp.Login.fmx</Transaction>
+    <Transaction>2020/06/16 21:23:20.288,=C:\Users\rober\Google Drive\dsv\wksdelphi\coronapp-delphi\Unit1.pas</Transaction>
+    <Transaction>2020/06/16 21:25:40.865,C:\Users\rober\Google Drive\dsv\wksdelphi\coronapp-delphi\CoronApp.Detalhe.fmx=C:\Users\rober\Google Drive\dsv\wksdelphi\coronapp-delphi\Unit1.fmx</Transaction>
+    <Transaction>2020/06/16 21:25:40.865,C:\Users\rober\Google Drive\dsv\wksdelphi\coronapp-delphi\CoronApp.Detalhe.pas=C:\Users\rober\Google Drive\dsv\wksdelphi\coronapp-delphi\Unit1.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile Android64="" Android="0045442702"/>

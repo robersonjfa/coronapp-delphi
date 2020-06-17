@@ -7,6 +7,8 @@ object FrmPrincipal: TFrmPrincipal
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
   DesignerMasterStyle = 3
   object Panel2: TPanel
     Align = Client
@@ -70,11 +72,13 @@ object FrmPrincipal: TFrmPrincipal
           ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
           HeaderAppearanceClassName = 'TListHeaderObjects'
           FooterAppearanceClassName = 'TListHeaderObjects'
+          ItemIndex = 1
           Align = Client
           Size.Width = 640.000000000000000000
           Size.Height = 383.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
+          OnItemClick = LsvNoticiaItemClick
         end
       end
       object TabItem2: TTabItem
@@ -91,6 +95,8 @@ object FrmPrincipal: TFrmPrincipal
         ExplicitSize.cx = 213.000000000000000000
         ExplicitSize.cy = 49.000000000000000000
         object LsbSintomas: TListBox
+          Touch.GestureManager = GestureManager1
+          OnGesture = LsbSintomasGesture
           Align = Client
           Size.Width = 640.000000000000000000
           Size.Height = 383.000000000000000000
@@ -100,8 +106,9 @@ object FrmPrincipal: TFrmPrincipal
           DefaultItemStyles.ItemStyle = ''
           DefaultItemStyles.GroupHeaderStyle = ''
           DefaultItemStyles.GroupFooterStyle = ''
+          MultiSelectStyle = Extended
           Viewport.Width = 640.000000000000000000
-          Viewport.Height = 335.000000000000000000
+          Viewport.Height = 383.000000000000000000
           object ListBoxHeader1: TListBoxHeader
             Size.Width = 640.000000000000000000
             Size.Height = 48.000000000000000000
@@ -195,5 +202,146 @@ object FrmPrincipal: TFrmPrincipal
         OnClick = ListBoxItem2Click
       end
     end
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'https://newsapi.org/v2/everything'
+    Params = <
+      item
+        Name = 'q'
+        Value = 'coronavirus'
+      end
+      item
+        Name = 'language'
+        Value = 'pt'
+      end
+      item
+        Name = 'from'
+      end
+      item
+        Name = 'to'
+      end
+      item
+        Name = 'apiKey'
+        Value = '6c0eff9c37884451993fcf212aebb7e7'
+      end>
+    RaiseExceptionOn500 = False
+    Left = 40
+    Top = 72
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 40
+    Top = 128
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'application/json'
+    RootElement = 'articles'
+    Left = 40
+    Top = 184
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Active = True
+    Dataset = FDMemTable1
+    FieldDefs = <>
+    Response = RESTResponse1
+    Left = 40
+    Top = 240
+  end
+  object FDMemTable1: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'source'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'author'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'title'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'description'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'url'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'urlToImage'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'publishedAt'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'content'
+        DataType = ftWideString
+        Size = 255
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 40
+    Top = 288
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 112
+    Top = 208
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 116
+    Top = 141
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'description'
+      Control = LsvNoticia
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'title'
+      FillBreakGroups = <>
+    end
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 576
+    Top = 16
+    GestureData = <
+      item
+        Control = LsbSintomas
+        Collection = <
+          item
+            GestureID = sgiCheck
+          end
+          item
+            GestureID = sgiChevronUp
+          end>
+      end>
   end
 end

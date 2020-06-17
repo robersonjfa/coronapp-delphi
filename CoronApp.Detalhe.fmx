@@ -1,0 +1,74 @@
+object FrmDetalhe: TFrmDetalhe
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object SpeedButton1: TSpeedButton
+      Align = Left
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowlefttoolbutton'
+      Text = 'SpeedButton1'
+      OnClick = SpeedButton1Click
+    end
+    object Label1: TLabel
+      Position.X = 56.000000000000000000
+      Size.Width = 209.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Detalhes da Not'#237'cia'
+      TabOrder = 1
+    end
+  end
+  object Label2: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 433.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Vamos Evitar O Coronavirus'
+    TabOrder = 2
+  end
+  object Label3: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      'O pessoal n'#227'o aprendeu nem a n'#227'o compartilhar seringa, imagina o' +
+      ' baseado? HuAsHuAsHuAs'
+    TabOrder = 3
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = FrmPrincipal.BindSourceDB1
+      FieldName = 'title'
+      Component = Label2
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = FrmPrincipal.BindSourceDB1
+      FieldName = 'description'
+      Component = Label3
+      ComponentProperty = 'Text'
+    end
+  end
+end
